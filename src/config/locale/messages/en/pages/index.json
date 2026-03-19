@@ -1,219 +1,124 @@
 {
   "page": {
     "show_sections": [
-      "hero",
-      "quick_picks",
-      "introduce",
-      "features",
-      "faq",
-      "cta"
+      "hero_leaderboard",
+      "why_trust",
+      "full_rankings",
+      "faq"
     ],
     "sections": {
-      "hero": {
-        "id": "hero",
+      "hero_leaderboard": {
+        "id": "hero_leaderboard",
         "title": "Which LLM Should You Use?",
         "highlight_text": "Which LLM",
-        "description": "Quick answers based on verified benchmarks. Find the perfect model for your specific task.",
+        "description": "Quick answers based on verified benchmarks from vellum.ai. Find the perfect model for your task.",
         "announcement": {
           "badge": "Updated",
           "title": "📊 February 2026 Rankings",
-          "url": "#features"
+          "url": "#full_rankings"
         },
         "tip": "Data sourced from vellum.ai and verified providers",
-        "buttons": [
-          {
-            "title": "See Full Rankings",
-            "icon": "BarChart3",
-            "url": "#features",
-            "target": "_self",
-            "variant": "default"
-          }
-        ],
-        "show_avatars": false,
-        "avatars_tip": "",
-        "show_award": false,
-        "quick_picks": [
-          {
-            "icon": "RiCodeBoxLine",
-            "task": "Coding",
-            "model": "Claude Sonnet 4.5",
-            "score": "82% SWE Bench",
-            "color": "blue"
-          },
-          {
-            "icon": "RiCalculatorLine",
-            "task": "Math",
-            "model": "Gemini 3 Pro",
-            "score": "100% AIME",
-            "color": "green"
-          },
-          {
-            "icon": "RiBrainLine",
-            "task": "Reasoning",
-            "model": "Claude 3 Opus",
-            "score": "95.4% GPQA",
-            "color": "purple"
-          },
-          {
-            "icon": "RiEdit2Line",
-            "task": "Writing",
-            "model": "GPT 5.2",
-            "score": "Top Overall",
-            "color": "orange"
-          },
-          {
-            "icon": "RiEyeLine",
-            "task": "Vision",
-            "model": "Claude Opus 4.6",
-            "score": "68.8% ARC-AGI",
-            "color": "pink"
-          },
-          {
-            "icon": "RiRocketLine",
-            "task": "Speed",
-            "model": "Llama 4 Scout",
-            "score": "2600 t/s",
-            "color": "cyan"
-          }
-        ],
-        "image": {
-          "src": "https://picsum.photos/800/600?random=1",
-          "alt": "LLM Comparison Dashboard",
-          "width": 800,
-          "height": 600
+        "hero_image": {
+          "src": "/llm-hero.png",
+          "alt": "Best LLM Top - LLM Leaderboard Dashboard",
+          "width": 1920,
+          "height": 1080
         },
-        "image_invert": {
-          "src": "https://picsum.photos/800/600?random=2",
-          "alt": "LLM Comparison Dashboard Dark",
-          "width": 800,
-          "height": 600
-        },
-        "background_image": {
-          "src": "https://picsum.photos/1920/1080?blur=2",
-          "alt": "hero"
+        "quick_picks_intro": {
+          "title": "Quick Pick: Best LLM by Task",
+          "description": "Don't overthink it. Here's what to use based on real benchmarks.",
+          "items": [
+            {
+              "icon": "RiCodeBoxLine",
+              "task": "For Coding",
+              "model": "Claude Sonnet 4.5",
+              "description": "82% on SWE Bench",
+              "why": "Best for agentic coding, debugging, and code generation",
+              "benchmark": "SWE Bench",
+              "score": "82%"
+            },
+            {
+              "icon": "RiCalculatorLine",
+              "task": "For Math",
+              "model": "Gemini 3 Pro",
+              "description": "100% on AIME 2025",
+              "why": "Only model with perfect score on high school math competition",
+              "benchmark": "AIME 2025",
+              "score": "100%"
+            },
+            {
+              "icon": "RiBrainLine",
+              "task": "For Reasoning",
+              "model": "Claude 3 Opus",
+              "description": "95.4% on GPQA Diamond",
+              "why": "Highest score on the hardest reasoning benchmark",
+              "benchmark": "GPQA Diamond",
+              "score": "95.4%"
+            },
+            {
+              "icon": "RiTrophyLine",
+              "task": "Best Overall",
+              "model": "Gemini 3 Pro",
+              "description": "45.8% on HLE",
+              "why": "Top performer across multiple benchmarks",
+              "benchmark": "Humanity's Last Exam",
+              "score": "45.8%"
+            },
+            {
+              "icon": "RiEyeLine",
+              "task": "For Vision",
+              "model": "Claude Opus 4.6",
+              "description": "68.8% on ARC-AGI 2",
+              "why": "Leader in visual reasoning and understanding",
+              "benchmark": "ARC-AGI 2",
+              "score": "68.8%"
+            },
+            {
+              "icon": "RiRocketLine",
+              "task": "For Speed",
+              "model": "Llama 4 Scout",
+              "description": "2600 tokens/sec",
+              "why": "Fastest model with good quality",
+              "benchmark": "Throughput",
+              "score": "2600 t/s"
+            }
+          ]
         }
       },
-      "quick_picks": {
-        "id": "quick_picks",
-        "title": "Quick Pick: Best LLM for Your Task",
-        "description": "Don't overthink it. Here's what to use based on real benchmarks.",
-        "items": [
-          {
-            "icon": "RiCodeBoxLine",
-            "task": "For Coding",
-            "model": "Claude Sonnet 4.5",
-            "description": "Score: 82% on SWE Bench. Best for agentic coding, debugging, and code generation.",
-            "why": "Top performer on real-world GitHub coding tasks",
-            "color": "blue",
-            "benchmark": "SWE Bench",
-            "score_value": "82%"
-          },
-          {
-            "icon": "RiCalculatorLine",
-            "task": "For Math Problems",
-            "model": "Gemini 3 Pro",
-            "description": "Score: 100% on AIME 2025. Perfect performance on high school math competition.",
-            "why": "Only model to achieve perfect score",
-            "color": "green",
-            "benchmark": "AIME 2025",
-            "score_value": "100%"
-          },
-          {
-            "icon": "RiBrainLine",
-            "task": "For Complex Reasoning",
-            "model": "Claude 3 Opus",
-            "description": "Score: 95.4% on GPQA Diamond. The leader in graduate-level QA reasoning.",
-            "why": "Highest score on the hardest reasoning benchmark",
-            "color": "purple",
-            "benchmark": "GPQA Diamond",
-            "score_value": "95.4%"
-          },
-          {
-            "icon": "RiTrophyLine",
-            "task": "Best Overall",
-            "model": "Gemini 3 Pro",
-            "description": "Score: 45.8% on Humanity's Last Exam. The highest comprehensive performance.",
-            "why": "Top performer across multiple benchmarks",
-            "color": "yellow",
-            "benchmark": "HLE",
-            "score_value": "45.8%"
-          },
-          {
-            "icon": "RiEyeLine",
-            "task": "For Vision Tasks",
-            "model": "Claude Opus 4.6",
-            "description": "Score: 68.8% on ARC-AGI 2. Leader in visual reasoning and understanding.",
-            "why": "Best at visual pattern recognition",
-            "color": "pink",
-            "benchmark": "ARC-AGI 2",
-            "score_value": "68.8%"
-          },
-          {
-            "icon": "RiRocketLine",
-            "task": "For Speed",
-            "model": "Llama 4 Scout",
-            "description": "Speed: 2600 tokens/sec. Incredible throughput for high-volume applications.",
-            "why": "Fastest model with good quality",
-            "color": "cyan",
-            "benchmark": "Throughput",
-            "score_value": "2600 t/s"
-          }
-        ]
-      },
-      "introduce": {
+      "why_trust": {
         "block": "features-list",
-        "id": "introduce",
+        "id": "why_trust",
         "title": "Why Trust Our Rankings?",
         "label": "About",
         "description": "We aggregate benchmark data from verified providers to help you make informed decisions.",
-        "image": {
-          "src": "https://picsum.photos/600/400?random=3",
-          "alt": "LLM Benchmark Analysis"
-        },
         "items": [
           {
             "title": "Verified Data Sources",
             "description": "We track benchmarks from vellum.ai, model providers, and independent evaluators.",
-            "icon": "RiBarChartBoxLine",
-            "image": {
-              "src": "https://picsum.photos/200/200?random=4",
-              "alt": "data"
-            }
+            "icon": "RiBarChartBoxLine"
           },
           {
             "title": "Real-World Benchmarks",
             "description": "SWE Bench for coding, AIME for math, GPQA Diamond for reasoning, ARC-AGI for vision.",
-            "icon": "RiSpeedMiniLine",
-            "image": {
-              "src": "https://picsum.photos/200/200?random=5",
-              "alt": "benchmarks"
-            }
+            "icon": "RiSpeedMiniLine"
           },
           {
             "title": "Regular Updates",
             "description": "Rankings updated monthly as new models and benchmarks are released.",
-            "icon": "RiRefreshLine",
-            "image": {
-              "src": "https://picsum.photos/200/200?random=6",
-              "alt": "updates"
-            }
+            "icon": "RiRefreshLine"
           },
           {
             "title": "Cost & Speed Metrics",
             "description": "Token costs, latency, and throughput data to optimize your budget.",
-            "icon": "RiMoneyDollarCircleLine",
-            "image": {
-              "src": "https://picsum.photos/200/200?random=7",
-              "alt": "cost"
-            }
+            "icon": "RiMoneyDollarCircleLine"
           }
         ],
         "className": "bg-muted"
       },
-      "features": {
-        "id": "features",
-        "title": "Full Leaderboard",
-        "description": "Complete rankings across all benchmarks from verified providers.",
+      "full_rankings": {
+        "id": "full_rankings",
+        "title": "Complete Leaderboard",
+        "description": "Full rankings across all benchmarks from verified providers.",
         "items": [
           {
             "title": "Best for Reasoning - Claude 3 Opus",
@@ -277,27 +182,6 @@
             "answer": "Yes! Llama 4 Scout (2600 t/s) and other open models often beat proprietary models on speed and cost while maintaining good quality."
           }
         ]
-      },
-      "cta": {
-        "id": "cta",
-        "title": "Find Your Perfect LLM",
-        "description": "Use our Quick Picks or explore the full leaderboard to make the right choice.",
-        "buttons": [
-          {
-            "title": "View Leaderboard",
-            "url": "#features",
-            "target": "_self",
-            "icon": "BarChart3"
-          },
-          {
-            "title": "Compare Models",
-            "url": "https://vellum.ai/llm-leaderboard",
-            "target": "_blank",
-            "variant": "outline",
-            "icon": "ExternalLink"
-          }
-        ],
-        "className": "bg-muted"
       }
     }
   }

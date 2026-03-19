@@ -1,217 +1,122 @@
 {
   "page": {
     "show_sections": [
-      "hero",
-      "quick_picks",
-      "introduce",
-      "features",
-      "faq",
-      "cta"
+      "hero_leaderboard",
+      "why_trust",
+      "full_rankings",
+      "faq"
     ],
     "sections": {
-      "hero": {
-        "id": "hero",
+      "hero_leaderboard": {
+        "id": "hero_leaderboard",
         "title": "你应该用哪个 LLM？",
         "highlight_text": "哪个 LLM",
-        "description": "基于已验证基准测试的快速答案。为你的特定任务找到完美的模型。",
+        "description": "基于 vellum.ai 等已验证基准测试的快速答案。为你的特定任务找到完美的模型。",
         "announcement": {
           "badge": "已更新",
           "title": "📊 2026年2月排行榜",
-          "url": "#features"
+          "url": "#full_rankings"
         },
         "tip": "数据来源：vellum.ai 和已验证的提供商",
-        "buttons": [
-          {
-            "title": "查看完整排行榜",
-            "icon": "BarChart3",
-            "url": "#features",
-            "target": "_self",
-            "variant": "default"
-          }
-        ],
-        "show_avatars": false,
-        "avatars_tip": "",
-        "show_award": false,
-        "quick_picks": [
-          {
-            "icon": "RiCodeBoxLine",
-            "task": "写代码",
-            "model": "Claude Sonnet 4.5",
-            "score": "82% SWE Bench",
-            "color": "blue"
-          },
-          {
-            "icon": "RiCalculatorLine",
-            "task": "数学",
-            "model": "Gemini 3 Pro",
-            "score": "100% AIME",
-            "color": "green"
-          },
-          {
-            "icon": "RiBrainLine",
-            "task": "推理",
-            "model": "Claude 3 Opus",
-            "score": "95.4% GPQA",
-            "color": "purple"
-          },
-          {
-            "icon": "RiEdit2Line",
-            "task": "写作",
-            "model": "GPT 5.2",
-            "score": "综合最佳",
-            "color": "orange"
-          },
-          {
-            "icon": "RiEyeLine",
-            "task": "视觉",
-            "model": "Claude Opus 4.6",
-            "score": "68.8% ARC-AGI",
-            "color": "pink"
-          },
-          {
-            "icon": "RiRocketLine",
-            "task": "速度",
-            "model": "Llama 4 Scout",
-            "score": "2600 t/s",
-            "color": "cyan"
-          }
-        ],
-        "image": {
-          "src": "https://picsum.photos/800/600?random=10",
-          "alt": "LLM 对比仪表板",
-          "width": 800,
-          "height": 600
+        "hero_image": {
+          "src": "/llm-hero.png",
+          "alt": "Best LLM Top - LLM 排行榜仪表板",
+          "width": 1920,
+          "height": 1080
         },
-        "image_invert": {
-          "src": "https://picsum.photos/800/600?random=11",
-          "alt": "LLM 对比仪表板暗色",
-          "width": 800,
-          "height": 600
-        },
-        "background_image": {
-          "src": "https://picsum.photos/1920/1080?blur=2&random=12",
-          "alt": "hero"
+        "quick_picks_intro": {
+          "title": "快速选择：你的任务最适合哪个 LLM",
+          "description": "别想太多，基于真实基准测试，这里直接给你答案。",
+          "items": [
+            {
+              "icon": "RiCodeBoxLine",
+              "task": "写代码用",
+              "model": "Claude Sonnet 4.5",
+              "description": "SWE Bench 82%",
+              "why": "在真实 GitHub 编程任务中表现最佳",
+              "benchmark": "SWE Bench",
+              "score": "82%"
+            },
+            {
+              "icon": "RiCalculatorLine",
+              "task": "做数学题用",
+              "model": "Gemini 3 Pro",
+              "description": "AIME 2025 100%",
+              "why": "唯一在高中数学竞赛中获得满分的模型",
+              "benchmark": "AIME 2025",
+              "score": "100%"
+            },
+            {
+              "icon": "RiBrainLine",
+              "task": "复杂推理用",
+              "model": "Claude 3 Opus",
+              "description": "GPQA Diamond 95.4%",
+              "why": "最难推理基准测试中的最高分",
+              "benchmark": "GPQA Diamond",
+              "score": "95.4%"
+            },
+            {
+              "icon": "RiTrophyLine",
+              "task": "综合最佳",
+              "model": "Gemini 3 Pro",
+              "description": "HLE 45.8%",
+              "why": "在多个基准测试中表现最佳",
+              "benchmark": "Humanity's Last Exam",
+              "score": "45.8%"
+            },
+            {
+              "icon": "RiEyeLine",
+              "task": "视觉任务用",
+              "model": "Claude Opus 4.6",
+              "description": "ARC-AGI 2 68.8%",
+              "why": "视觉推理和理解的领导者",
+              "benchmark": "ARC-AGI 2",
+              "score": "68.8%"
+            },
+            {
+              "icon": "RiRocketLine",
+              "task": "追求速度用",
+              "model": "Llama 4 Scout",
+              "description": "2600 tokens/sec",
+              "why": "速度最快且质量不错",
+              "benchmark": "吞吐量",
+              "score": "2600 t/s"
+            }
+          ]
         }
       },
-      "quick_picks": {
-        "id": "quick_picks",
-        "title": "快速选择：你的任务最适合哪个 LLM",
-        "description": "别想太多，基于真实基准测试，这里直接给你答案。",
-        "items": [
-          {
-            "icon": "RiCodeBoxLine",
-            "task": "写代码用",
-            "model": "Claude Sonnet 4.5",
-            "description": "得分：SWE Bench 82%。最适合智能编程、调试和代码生成。",
-            "why": "在真实 GitHub 编程任务中表现最佳",
-            "color": "blue",
-            "benchmark": "SWE Bench",
-            "score_value": "82%"
-          },
-          {
-            "icon": "RiCalculatorLine",
-            "task": "做数学题用",
-            "model": "Gemini 3 Pro",
-            "description": "得分：AIME 2025 100%。在高中数学竞赛中表现完美。",
-            "why": "唯一获得满分的模型",
-            "color": "green",
-            "benchmark": "AIME 2025",
-            "score_value": "100%"
-          },
-          {
-            "icon": "RiBrainLine",
-            "task": "复杂推理用",
-            "model": "Claude 3 Opus",
-            "description": "得分：GPQA Diamond 95.4%。研究生级 QA 推理的领导者。",
-            "why": "最难推理基准测试中的最高分",
-            "color": "purple",
-            "benchmark": "GPQA Diamond",
-            "score_value": "95.4%"
-          },
-          {
-            "icon": "RiTrophyLine",
-            "task": "综合最佳",
-            "model": "Gemini 3 Pro",
-            "description": "得分：Humanity's Last Exam 45.8%。最高的综合性能。",
-            "why": "在多个基准测试中表现最佳",
-            "color": "yellow",
-            "benchmark": "HLE",
-            "score_value": "45.8%"
-          },
-          {
-            "icon": "RiEyeLine",
-            "task": "视觉任务用",
-            "model": "Claude Opus 4.6",
-            "description": "得分：ARC-AGI 2 68.8%。视觉推理和理解的领导者。",
-            "why": "视觉模式识别能力最强",
-            "color": "pink",
-            "benchmark": "ARC-AGI 2",
-            "score_value": "68.8%"
-          },
-          {
-            "icon": "RiRocketLine",
-            "task": "追求速度用",
-            "model": "Llama 4 Scout",
-            "description": "速度：2600 tokens/sec。高流量应用的惊人吞吐量。",
-            "why": "速度最快且质量不错",
-            "color": "cyan",
-            "benchmark": "吞吐量",
-            "score_value": "2600 t/s"
-          }
-        ]
-      },
-      "introduce": {
+      "why_trust": {
         "block": "features-list",
-        "id": "introduce",
+        "id": "why_trust",
         "title": "为什么信任我们的排行榜？",
         "label": "关于",
         "description": "我们从已验证的提供商聚合基准测试数据，帮助你做出明智决定。",
-        "image": {
-          "src": "https://picsum.photos/600/400?random=13",
-          "alt": "LLM 基准测试分析"
-        },
         "items": [
           {
             "title": "已验证的数据来源",
             "description": "我们跟踪来自 vellum.ai、模型提供商和独立评估者的基准测试。",
-            "icon": "RiBarChartBoxLine",
-            "image": {
-              "src": "https://picsum.photos/200/200?random=14",
-              "alt": "data"
-            }
+            "icon": "RiBarChartBoxLine"
           },
           {
             "title": "真实世界基准测试",
             "description": "SWE Bench 编程、AIME 数学、GPQA Diamond 推理、ARC-AGI 视觉。",
-            "icon": "RiSpeedMiniLine",
-            "image": {
-              "src": "https://picsum.photos/200/200?random=15",
-              "alt": "benchmarks"
-            }
+            "icon": "RiSpeedMiniLine"
           },
           {
             "title": "定期更新",
             "description": "随着新模型和基准测试的发布，排行榜每月更新。",
-            "icon": "RiRefreshLine",
-            "image": {
-              "src": "https://picsum.photos/200/200?random=16",
-              "alt": "updates"
-            }
+            "icon": "RiRefreshLine"
           },
           {
             "title": "成本和速度指标",
             "description": "Token 成本、延迟和吞吐量数据，帮助你优化预算。",
-            "icon": "RiMoneyDollarCircleLine",
-            "image": {
-              "src": "https://picsum.photos/200/200?random=17",
-              "alt": "cost"
-            }
+            "icon": "RiMoneyDollarCircleLine"
           }
         ],
         "className": "bg-muted"
       },
-      "features": {
-        "id": "features",
+      "full_rankings": {
+        "id": "full_rankings",
         "title": "完整排行榜",
         "description": "来自已验证提供商的所有基准测试完整排名。",
         "items": [
@@ -277,27 +182,6 @@
             "answer": "是的！Llama 4 Scout（2600 t/s）和其他开源模型在速度和成本上经常超过专有模型，同时保持良好的质量。"
           }
         ]
-      },
-      "cta": {
-        "id": "cta",
-        "title": "找到你的完美 LLM",
-        "description": "使用我们的快速选择或探索完整排行榜，做出正确的选择。",
-        "buttons": [
-          {
-            "title": "查看排行榜",
-            "url": "#features",
-            "target": "_self",
-            "icon": "BarChart3"
-          },
-          {
-            "title": "对比模型",
-            "url": "https://vellum.ai/llm-leaderboard",
-            "target": "_blank",
-            "variant": "outline",
-            "icon": "ExternalLink"
-          }
-        ],
-        "className": "bg-muted"
       }
     }
   }

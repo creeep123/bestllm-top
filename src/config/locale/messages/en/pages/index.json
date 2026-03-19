@@ -2,233 +2,209 @@
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "quick_picks",
       "introduce",
-      "benefits",
-      "usage",
       "features",
-      "stats",
-      "testimonials",
       "faq",
       "cta"
     ],
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Ship AI Startups in hours, not days",
-        "highlight_text": "in hours",
-        "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+        "title": "Which LLM Should You Use?",
+        "highlight_text": "Which LLM",
+        "description": "Quick answers based on verified benchmarks. Find the perfect model for your specific task.",
         "announcement": {
-          "badge": "New",
-          "title": "🎉 ShipAny Template Two",
-          "url": "/pricing"
+          "badge": "Updated",
+          "title": "📊 February 2026 Rankings",
+          "url": "#features"
         },
-        "tip": "🎁 Special offer for the first 1000 users",
+        "tip": "Data sourced from vellum.ai and verified providers",
         "buttons": [
           {
-            "title": "Get Started",
-            "icon": "Zap",
-            "url": "/pricing",
+            "title": "See Full Rankings",
+            "icon": "BarChart3",
+            "url": "#features",
             "target": "_self",
             "variant": "default"
-          },
-          {
-            "title": "Read Document",
-            "icon": "BookOpenText",
-            "url": "/docs",
-            "target": "_blank",
-            "variant": "outline"
           }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ users are using ShipAny",
+        "show_avatars": false,
+        "avatars_tip": "",
         "show_award": false,
+        "quick_picks": [
+          {
+            "icon": "RiCodeBoxLine",
+            "task": "Coding",
+            "model": "Claude Sonnet 4.5",
+            "score": "82% SWE Bench",
+            "color": "blue"
+          },
+          {
+            "icon": "RiCalculatorLine",
+            "task": "Math",
+            "model": "Gemini 3 Pro",
+            "score": "100% AIME",
+            "color": "green"
+          },
+          {
+            "icon": "RiBrainLine",
+            "task": "Reasoning",
+            "model": "Claude 3 Opus",
+            "score": "95.4% GPQA",
+            "color": "purple"
+          },
+          {
+            "icon": "RiEdit2Line",
+            "task": "Writing",
+            "model": "GPT 5.2",
+            "score": "Top Overall",
+            "color": "orange"
+          },
+          {
+            "icon": "RiEyeLine",
+            "task": "Vision",
+            "model": "Claude Opus 4.6",
+            "score": "68.8% ARC-AGI",
+            "color": "pink"
+          },
+          {
+            "icon": "RiRocketLine",
+            "task": "Speed",
+            "model": "Llama 4 Scout",
+            "score": "2600 t/s",
+            "color": "cyan"
+          }
+        ],
         "image": {
-          "src": "/imgs/features/admin.png",
-          "alt": "hero",
-          "width": 1200,
-          "height": 800
+          "src": "https://picsum.photos/800/600?random=1",
+          "alt": "LLM Comparison Dashboard",
+          "width": 800,
+          "height": 600
         },
         "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "hero",
-          "width": 1200,
-          "height": 800
+          "src": "https://picsum.photos/800/600?random=2",
+          "alt": "LLM Comparison Dashboard Dark",
+          "width": 800,
+          "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/tree.jpg",
+          "src": "https://picsum.photos/1920/1080?blur=2",
           "alt": "hero"
         }
       },
-      "logos": {
-        "id": "logos",
-        "title": "ShipAny is built on the shoulders of giants",
+      "quick_picks": {
+        "id": "quick_picks",
+        "title": "Quick Pick: Best LLM for Your Task",
+        "description": "Don't overthink it. Here's what to use based on real benchmarks.",
         "items": [
           {
-            "title": "Next.js",
-            "image": {
-              "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
-            }
+            "icon": "RiCodeBoxLine",
+            "task": "For Coding",
+            "model": "Claude Sonnet 4.5",
+            "description": "Score: 82% on SWE Bench. Best for agentic coding, debugging, and code generation.",
+            "why": "Top performer on real-world GitHub coding tasks",
+            "color": "blue",
+            "benchmark": "SWE Bench",
+            "score_value": "82%"
           },
           {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
+            "icon": "RiCalculatorLine",
+            "task": "For Math Problems",
+            "model": "Gemini 3 Pro",
+            "description": "Score: 100% on AIME 2025. Perfect performance on high school math competition.",
+            "why": "Only model to achieve perfect score",
+            "color": "green",
+            "benchmark": "AIME 2025",
+            "score_value": "100%"
           },
           {
-            "title": "TailwindCSS",
-            "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
-            }
+            "icon": "RiBrainLine",
+            "task": "For Complex Reasoning",
+            "model": "Claude 3 Opus",
+            "description": "Score: 95.4% on GPQA Diamond. The leader in graduate-level QA reasoning.",
+            "why": "Highest score on the hardest reasoning benchmark",
+            "color": "purple",
+            "benchmark": "GPQA Diamond",
+            "score_value": "95.4%"
           },
           {
-            "title": "Shadcn/UI",
-            "image": {
-              "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
-            }
+            "icon": "RiTrophyLine",
+            "task": "Best Overall",
+            "model": "Gemini 3 Pro",
+            "description": "Score: 45.8% on Humanity's Last Exam. The highest comprehensive performance.",
+            "why": "Top performer across multiple benchmarks",
+            "color": "yellow",
+            "benchmark": "HLE",
+            "score_value": "45.8%"
           },
           {
-            "title": "Vercel",
-            "image": {
-              "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
-            }
+            "icon": "RiEyeLine",
+            "task": "For Vision Tasks",
+            "model": "Claude Opus 4.6",
+            "description": "Score: 68.8% on ARC-AGI 2. Leader in visual reasoning and understanding.",
+            "why": "Best at visual pattern recognition",
+            "color": "pink",
+            "benchmark": "ARC-AGI 2",
+            "score_value": "68.8%"
+          },
+          {
+            "icon": "RiRocketLine",
+            "task": "For Speed",
+            "model": "Llama 4 Scout",
+            "description": "Speed: 2600 tokens/sec. Incredible throughput for high-volume applications.",
+            "why": "Fastest model with good quality",
+            "color": "cyan",
+            "benchmark": "Throughput",
+            "score_value": "2600 t/s"
           }
         ]
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "What is ShipAny",
-        "label": "Introduce",
-        "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups, including templates, components, and documentation.",
+        "title": "Why Trust Our Rankings?",
+        "label": "About",
+        "description": "We aggregate benchmark data from verified providers to help you make informed decisions.",
         "image": {
-          "src": "/imgs/features/landing-page.png",
-          "alt": "introduce"
+          "src": "https://picsum.photos/600/400?random=3",
+          "alt": "LLM Benchmark Analysis"
         },
         "items": [
           {
-            "title": "Ready-to-use Templates",
-            "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-            "icon": "RiNextjsFill",
+            "title": "Verified Data Sources",
+            "description": "We track benchmarks from vellum.ai, model providers, and independent evaluators.",
+            "icon": "RiBarChartBoxLine",
             "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "introduce"
+              "src": "https://picsum.photos/200/200?random=4",
+              "alt": "data"
             }
           },
           {
-            "title": "Infrastructure Setup",
-            "description": "Get instant access to scalable infrastructure with best practices built-in.",
-            "icon": "RiDatabase2Line",
+            "title": "Real-World Benchmarks",
+            "description": "SWE Bench for coding, AIME for math, GPQA Diamond for reasoning, ARC-AGI for vision.",
+            "icon": "RiSpeedMiniLine",
             "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "introduce"
+              "src": "https://picsum.photos/200/200?random=5",
+              "alt": "benchmarks"
             }
           },
           {
-            "title": "Quick Deployment",
-            "description": "Deploy your AI SaaS application to production in hours, not days.",
-            "icon": "RiCloudyFill",
+            "title": "Regular Updates",
+            "description": "Rankings updated monthly as new models and benchmarks are released.",
+            "icon": "RiRefreshLine",
             "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "introduce"
+              "src": "https://picsum.photos/200/200?random=6",
+              "alt": "updates"
             }
           },
           {
-            "title": "AI Integration",
-            "description": "Integrate AI into your project with ease using our built-in AI SDK.",
-            "icon": "RiRobot2Line",
+            "title": "Cost & Speed Metrics",
+            "description": "Token costs, latency, and throughput data to optimize your budget.",
+            "icon": "RiMoneyDollarCircleLine",
             "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "introduce"
-            }
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "Why Choose ShipAny",
-        "label": "Benefits",
-        "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
-        "items": [
-          {
-            "title": "Complete Framework",
-            "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
-            "icon": "RiNextjsFill",
-            "image": {
-              "src": "/imgs/features/user-billing.png",
-              "alt": "benefits"
-            }
-          },
-          {
-            "title": "Rich Templates Library",
-            "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
-            "icon": "RiClapperboardAiLine",
-            "image": {
-              "src": "/imgs/features/admin-settings.png",
-              "alt": "benefits"
-            }
-          },
-          {
-            "title": "Technical Guidance",
-            "description": "Get dedicated support and join our developer community to ensure your successful launch.",
-            "icon": "RiCodeFill",
-            "image": {
-              "src": "/imgs/features/landing-page.png",
-              "alt": "benefits"
-            }
-          }
-        ]
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "How to Launch with ShipAny",
-        "description": "Get your AI SaaS startup running in three simple steps:",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "usage"
-        },
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "Get ShipAny",
-            "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "Start Your Project",
-            "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "Customize Your Project",
-            "description": "Modify the template with your data and contents. Specific AI functionality needs.",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "Deploy to Production",
-            "description": "Deploy your project to production with a few steps and start serving customers immediately.",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "usage"
+              "src": "https://picsum.photos/200/200?random=7",
+              "alt": "cost"
             }
           }
         ],
@@ -236,187 +212,91 @@
       },
       "features": {
         "id": "features",
-        "title": "Key Features of ShipAny",
-        "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+        "title": "Full Leaderboard",
+        "description": "Complete rankings across all benchmarks from verified providers.",
         "items": [
           {
-            "title": "Next.js Boilerplate",
-            "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-            "icon": "RiNextjsFill"
+            "title": "Best for Reasoning - Claude 3 Opus",
+            "description": "Score: 95.4% on GPQA Diamond. The leader in complex reasoning tasks.",
+            "icon": "RiBrainLine"
           },
           {
-            "title": "Authentication & Payments",
-            "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-            "icon": "RiKey2Fill"
+            "title": "Best for Math - Gemini 3 Pro",
+            "description": "Score: 100% on AIME 2025. Perfect performance on high school math competition.",
+            "icon": "RiCalculatorLine"
           },
           {
-            "title": "Data Infrastructure",
-            "description": "Built-in Supabase integration for reliable and scalable data storage.",
-            "icon": "RiDatabase2Line"
+            "title": "Best for Coding - Claude Sonnet 4.5",
+            "description": "Score: 82% on SWE Bench. Top choice for agentic coding tasks.",
+            "icon": "RiCodeBoxLine"
           },
           {
-            "title": "One-Click Deployment",
-            "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-            "icon": "RiCloudy2Fill"
+            "title": "Best Overall - Gemini 3 Pro",
+            "description": "Score: 45.8% on Humanity's Last Exam. The highest comprehensive performance.",
+            "icon": "RiTrophyLine"
           },
           {
-            "title": "Business Analytics",
-            "description": "Integrated Google Analytics and Search Console for tracking growth.",
-            "icon": "RiBarChart2Line"
+            "title": "Best Visual Reasoning - Claude Opus 4.6",
+            "description": "Score: 68.8% on ARC-AGI 2. Leader in visual understanding tasks.",
+            "icon": "RiEyeLine"
           },
           {
-            "title": "AI-Ready Infrastructure",
-            "description": "Pre-configured AI integration with built-in credits system and API sales.",
-            "icon": "RiRobot2Line"
-          }
-        ]
-      },
-      "stats": {
-        "id": "stats",
-        "title": "People Love ShipAny",
-        "description": "for it's easy to use and fast to ship.",
-        "items": [
-          {
-            "title": "999+",
-            "description": "Customers"
-          },
-          {
-            "title": "200+",
-            "description": "Blocks"
-          },
-          {
-            "title": "50+",
-            "description": "Templates"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "What Users Say About ShipAny",
-        "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
-        "items": [
-          {
-            "name": "David Chen",
-            "role": "Founder of AIWallpaper.shop",
-            "quote": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "david"
-            }
-          },
-          {
-            "name": "Rachel Kim",
-            "role": "CTO at HeyBeauty.ai",
-            "quote": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "rachel"
-            }
-          },
-          {
-            "name": "Marcus Thompson",
-            "role": "Solo Developer",
-            "quote": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "marcus"
-            }
-          },
-          {
-            "name": "Sofia Garcia",
-            "role": "CEO of Melodisco",
-            "quote": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "sofia"
-            }
-          },
-          {
-            "name": "James Wilson",
-            "role": "Tech Lead at GPTs.works",
-            "quote": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "james"
-            }
-          },
-          {
-            "name": "Anna Zhang",
-            "role": "Startup Founder",
-            "quote": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "anna"
-            }
+            "title": "Fastest Model - Llama 4 Scout",
+            "description": "Speed: 2600 tokens/sec. Incredible throughput for high-volume applications.",
+            "icon": "RiRocketLine"
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Frequently Asked Questions About ShipAny",
-        "description": "Have another question? Contact us on Discord or by email.",
+        "title": "Frequently Asked Questions",
+        "description": "Everything you need to know about choosing the right LLM.",
         "items": [
           {
-            "question": "What exactly is ShipAny and how does it work?",
-            "answer": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+            "question": "Which LLM is best for coding?",
+            "answer": "Claude Sonnet 4.5 is the best for coding with 82% on SWE Bench. It outperforms others on real-world GitHub coding tasks including debugging and code generation."
           },
           {
-            "question": "Do I need advanced technical skills to use ShipAny?",
-            "answer": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+            "question": "Which LLM is best for math and reasoning?",
+            "answer": "For math, Gemini 3 Pro achieves 100% on AIME 2025. For reasoning, Claude 3 Opus leads with 95.4% on GPQA Diamond, the hardest reasoning benchmark."
           },
           {
-            "question": "What types of AI SaaS can I build with ShipAny?",
-            "answer": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+            "question": "How often are rankings updated?",
+            "answer": "Our rankings are updated monthly to reflect the latest model releases and benchmark results from verified providers like vellum.ai."
           },
           {
-            "question": "How long does it typically take to launch with ShipAny?",
-            "answer": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+            "question": "Should I always choose the #1 model?",
+            "answer": "Not necessarily. Consider your specific needs: speed (Llama 4 Scout), cost (Nova Micro), or task-specific performance. Use our Quick Picks to find the best match for your use case."
           },
           {
-            "question": "What's included in the ShipAny infrastructure?",
-            "answer": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+            "question": "What benchmarks do you track?",
+            "answer": "We track SWE Bench (coding), AIME 2025 (math), GPQA Diamond (reasoning), ARC-AGI 2 (vision), Humanity's Last Exam (overall), plus cost and speed metrics."
           },
           {
-            "question": "Can I customize the templates to match my brand?",
-            "answer": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+            "question": "Are open-source models competitive?",
+            "answer": "Yes! Llama 4 Scout (2600 t/s) and other open models often beat proprietary models on speed and cost while maintaining good quality."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ship your first AI SaaS Startup",
-        "description": "Start from here, ship with ShipAny.",
+        "title": "Find Your Perfect LLM",
+        "description": "Use our Quick Picks or explore the full leaderboard to make the right choice.",
         "buttons": [
           {
-            "title": "Get ShipAny",
-            "url": "https://shipany.ai",
-            "target": "_blank",
-            "icon": "Zap"
+            "title": "View Leaderboard",
+            "url": "#features",
+            "target": "_self",
+            "icon": "BarChart3"
           },
           {
-            "title": "Read Document",
-            "url": "/docs",
+            "title": "Compare Models",
+            "url": "https://vellum.ai/llm-leaderboard",
             "target": "_blank",
             "variant": "outline",
-            "icon": "BookOpenText"
+            "icon": "ExternalLink"
           }
         ],
-        "className": "bg-muted"
-      },
-      "subscribe": {
-        "id": "subscribe",
-        "title": "Subscribe to our newsletter",
-        "description": "Get the latest news and updates from ShipAny.",
-        "submit": {
-          "input": {
-            "placeholder": "Enter your email"
-          },
-          "button": {
-            "title": "Subscribe"
-          },
-          "action": "/api/subscribe"
-        },
         "className": "bg-muted"
       }
     }

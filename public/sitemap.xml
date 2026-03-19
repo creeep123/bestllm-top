@@ -1,15 +1,18 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-domain.com/</loc>
-    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+    <loc>https://bestllm.top/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://your-domain.com/blog</loc>
-    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+    <loc>https://bestllm.top/privacy-policy</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://your-domain.com/showcases</loc>
-    <lastmod>2025-11-15T10:00:00+00:00</lastmod>
+    <loc>https://bestllm.top/terms-of-service</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+    <priority>0.3</priority>
   </url>
 </urlset>

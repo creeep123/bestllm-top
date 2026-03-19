@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny 模板二",
-    "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 脚手架。提供丰富模板和组件，助您快速上线产品。",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "Best LLM Top - 发现每个场景下最佳的大语言模型",
+    "description": "全面的 LLM 排行榜，对比顶级语言模型在推理、编程、数学、视觉等基准测试中的表现。为你的具体需求找到最佳的 LLM。",
+    "keywords": "最佳 llm, llm 排行榜, ai 模型对比, gpt vs claude, gemini vs gpt, 最佳编程 llm, 最佳推理 llm, llm 基准测试"
   },
   "sign": {
     "sign_in_title": "登录",

@@ -1,14 +1,16 @@
 {
   "page": {
     "show_sections": [
-      "hero_leaderboard",
+      "hero",
+      "quick_picks",
       "why_trust",
       "full_rankings",
       "faq"
     ],
     "sections": {
-      "hero_leaderboard": {
-        "id": "hero_leaderboard",
+      "hero": {
+        "id": "hero",
+        "block": "hero",
         "title": "Which LLM Should You Use?",
         "highlight_text": "Which LLM",
         "description": "Quick answers based on verified benchmarks from vellum.ai. Find the perfect model for your task.",
@@ -18,78 +20,55 @@
           "url": "#full_rankings"
         },
         "tip": "Data sourced from vellum.ai and verified providers",
-        "hero_image": {
+        "image": {
           "src": "/llm-hero.png",
           "alt": "Best LLM Top - LLM Leaderboard Dashboard",
           "width": 1920,
           "height": 1080
-        },
-        "quick_picks_intro": {
-          "title": "Quick Pick: Best LLM by Task",
-          "description": "Don't overthink it. Here's what to use based on real benchmarks.",
-          "items": [
-            {
-              "icon": "RiCodeBoxLine",
-              "task": "For Coding",
-              "model": "Claude Sonnet 4.5",
-              "description": "82% on SWE Bench",
-              "why": "Best for agentic coding, debugging, and code generation",
-              "benchmark": "SWE Bench",
-              "score": "82%"
-            },
-            {
-              "icon": "RiCalculatorLine",
-              "task": "For Math",
-              "model": "Gemini 3 Pro",
-              "description": "100% on AIME 2025",
-              "why": "Only model with perfect score on high school math competition",
-              "benchmark": "AIME 2025",
-              "score": "100%"
-            },
-            {
-              "icon": "RiBrainLine",
-              "task": "For Reasoning",
-              "model": "Claude 3 Opus",
-              "description": "95.4% on GPQA Diamond",
-              "why": "Highest score on the hardest reasoning benchmark",
-              "benchmark": "GPQA Diamond",
-              "score": "95.4%"
-            },
-            {
-              "icon": "RiTrophyLine",
-              "task": "Best Overall",
-              "model": "Gemini 3 Pro",
-              "description": "45.8% on HLE",
-              "why": "Top performer across multiple benchmarks",
-              "benchmark": "Humanity's Last Exam",
-              "score": "45.8%"
-            },
-            {
-              "icon": "RiEyeLine",
-              "task": "For Vision",
-              "model": "Claude Opus 4.6",
-              "description": "68.8% on ARC-AGI 2",
-              "why": "Leader in visual reasoning and understanding",
-              "benchmark": "ARC-AGI 2",
-              "score": "68.8%"
-            },
-            {
-              "icon": "RiRocketLine",
-              "task": "For Speed",
-              "model": "Llama 4 Scout",
-              "description": "2600 tokens/sec",
-              "why": "Fastest model with good quality",
-              "benchmark": "Throughput",
-              "score": "2600 t/s"
-            }
-          ]
         }
       },
+      "quick_picks": {
+        "id": "quick_picks",
+        "block": "features",
+        "title": "Quick Pick: Best LLM by Task",
+        "description": "Don't overthink it. Here's what to use based on real benchmarks.",
+        "items": [
+          {
+            "icon": "RiCodeBoxLine",
+            "title": "For Coding: Claude Sonnet 4.5",
+            "description": "82% on SWE Bench. Best for agentic coding, debugging, and code generation."
+          },
+          {
+            "icon": "RiCalculatorLine",
+            "title": "For Math: Gemini 3 Pro",
+            "description": "100% on AIME 2025. Only model with perfect score on high school math competition."
+          },
+          {
+            "icon": "RiBrainLine",
+            "title": "For Reasoning: Claude 3 Opus",
+            "description": "95.4% on GPQA Diamond. Highest score on the hardest reasoning benchmark."
+          },
+          {
+            "icon": "RiTrophyLine",
+            "title": "Best Overall: Gemini 3 Pro",
+            "description": "45.8% on HLE. Top performer across multiple benchmarks."
+          },
+          {
+            "icon": "RiEyeLine",
+            "title": "For Vision: Claude Opus 4.6",
+            "description": "68.8% on ARC-AGI 2. Leader in visual reasoning and understanding."
+          },
+          {
+            "icon": "RiRocketLine",
+            "title": "For Speed: Llama 4 Scout",
+            "description": "2600 tokens/sec. Fastest model with good quality."
+          }
+        ]
+      },
       "why_trust": {
-        "block": "features-list",
         "id": "why_trust",
+        "block": "features-list",
         "title": "Why Trust Our Rankings?",
-        "label": "About",
         "description": "We aggregate benchmark data from verified providers to help you make informed decisions.",
         "items": [
           {
@@ -117,6 +96,7 @@
       },
       "full_rankings": {
         "id": "full_rankings",
+        "block": "features",
         "title": "Complete Leaderboard",
         "description": "Full rankings across all benchmarks from verified providers.",
         "items": [
@@ -154,6 +134,7 @@
       },
       "faq": {
         "id": "faq",
+        "block": "faq",
         "title": "Frequently Asked Questions",
         "description": "Everything you need to know about choosing the right LLM.",
         "items": [

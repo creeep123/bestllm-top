@@ -1,14 +1,16 @@
 {
   "page": {
     "show_sections": [
-      "hero_leaderboard",
+      "hero",
+      "quick_picks",
       "why_trust",
       "full_rankings",
       "faq"
     ],
     "sections": {
-      "hero_leaderboard": {
-        "id": "hero_leaderboard",
+      "hero": {
+        "id": "hero",
+        "block": "hero",
         "title": "你应该用哪个 LLM？",
         "highlight_text": "哪个 LLM",
         "description": "基于 vellum.ai 等已验证基准测试的快速答案。为你的特定任务找到完美的模型。",
@@ -18,78 +20,55 @@
           "url": "#full_rankings"
         },
         "tip": "数据来源：vellum.ai 和已验证的提供商",
-        "hero_image": {
+        "image": {
           "src": "/llm-hero.png",
           "alt": "Best LLM Top - LLM 排行榜仪表板",
           "width": 1920,
           "height": 1080
-        },
-        "quick_picks_intro": {
-          "title": "快速选择：你的任务最适合哪个 LLM",
-          "description": "别想太多，基于真实基准测试，这里直接给你答案。",
-          "items": [
-            {
-              "icon": "RiCodeBoxLine",
-              "task": "写代码用",
-              "model": "Claude Sonnet 4.5",
-              "description": "SWE Bench 82%",
-              "why": "在真实 GitHub 编程任务中表现最佳",
-              "benchmark": "SWE Bench",
-              "score": "82%"
-            },
-            {
-              "icon": "RiCalculatorLine",
-              "task": "做数学题用",
-              "model": "Gemini 3 Pro",
-              "description": "AIME 2025 100%",
-              "why": "唯一在高中数学竞赛中获得满分的模型",
-              "benchmark": "AIME 2025",
-              "score": "100%"
-            },
-            {
-              "icon": "RiBrainLine",
-              "task": "复杂推理用",
-              "model": "Claude 3 Opus",
-              "description": "GPQA Diamond 95.4%",
-              "why": "最难推理基准测试中的最高分",
-              "benchmark": "GPQA Diamond",
-              "score": "95.4%"
-            },
-            {
-              "icon": "RiTrophyLine",
-              "task": "综合最佳",
-              "model": "Gemini 3 Pro",
-              "description": "HLE 45.8%",
-              "why": "在多个基准测试中表现最佳",
-              "benchmark": "Humanity's Last Exam",
-              "score": "45.8%"
-            },
-            {
-              "icon": "RiEyeLine",
-              "task": "视觉任务用",
-              "model": "Claude Opus 4.6",
-              "description": "ARC-AGI 2 68.8%",
-              "why": "视觉推理和理解的领导者",
-              "benchmark": "ARC-AGI 2",
-              "score": "68.8%"
-            },
-            {
-              "icon": "RiRocketLine",
-              "task": "追求速度用",
-              "model": "Llama 4 Scout",
-              "description": "2600 tokens/sec",
-              "why": "速度最快且质量不错",
-              "benchmark": "吞吐量",
-              "score": "2600 t/s"
-            }
-          ]
         }
       },
+      "quick_picks": {
+        "id": "quick_picks",
+        "block": "features",
+        "title": "快速选择：你的任务最适合哪个 LLM",
+        "description": "别想太多，基于真实基准测试，这里直接给你答案。",
+        "items": [
+          {
+            "icon": "RiCodeBoxLine",
+            "title": "写代码用：Claude Sonnet 4.5",
+            "description": "SWE Bench 82%。在真实 GitHub 编程任务中表现最佳，包括调试和代码生成。"
+          },
+          {
+            "icon": "RiCalculatorLine",
+            "title": "做数学题用：Gemini 3 Pro",
+            "description": "AIME 2025 100%。唯一在高中数学竞赛中获得满分的模型。"
+          },
+          {
+            "icon": "RiBrainLine",
+            "title": "复杂推理用：Claude 3 Opus",
+            "description": "GPQA Diamond 95.4%。最难推理基准测试中的最高分。"
+          },
+          {
+            "icon": "RiTrophyLine",
+            "title": "综合最佳：Gemini 3 Pro",
+            "description": "HLE 45.8%。在多个基准测试中表现最佳。"
+          },
+          {
+            "icon": "RiEyeLine",
+            "title": "视觉任务用：Claude Opus 4.6",
+            "description": "ARC-AGI 2 68.8%。视觉推理和理解的领导者。"
+          },
+          {
+            "icon": "RiRocketLine",
+            "title": "追求速度用：Llama 4 Scout",
+            "description": "2600 tokens/sec。速度最快且质量不错。"
+          }
+        ]
+      },
       "why_trust": {
-        "block": "features-list",
         "id": "why_trust",
+        "block": "features-list",
         "title": "为什么信任我们的排行榜？",
-        "label": "关于",
         "description": "我们从已验证的提供商聚合基准测试数据，帮助你做出明智决定。",
         "items": [
           {
@@ -117,6 +96,7 @@
       },
       "full_rankings": {
         "id": "full_rankings",
+        "block": "features",
         "title": "完整排行榜",
         "description": "来自已验证提供商的所有基准测试完整排名。",
         "items": [
@@ -154,6 +134,7 @@
       },
       "faq": {
         "id": "faq",
+        "block": "faq",
         "title": "常见问题",
         "description": "选择正确的 LLM 需要了解的一切。",
         "items": [

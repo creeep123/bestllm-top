@@ -30,6 +30,11 @@ export default async function DynamicPage({
   const sections = await Promise.all(
     sectionKeys.map(async (sectionKey: string) => {
       const section = page.sections?.[sectionKey];
+
+      if (!section) {
+        return { key: sectionKey, component: null };
+      }
+
       const block = section.block || section.id || sectionKey;
 
       try {
